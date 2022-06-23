@@ -8,7 +8,9 @@
         <script type="text/javascript">
             window.onload = function() {
 
-                var app = "vnd.youtube://UCJrEYgyJVevQBXp_kCXcBBw/videos";
+                var desktopFallback = "https://youtube.com/channel/UCJrEYgyJVevQBXp_kCXcBBw/videos",
+                mobileFallback = "https://youtube.com/channel/UCJrEYgyJVevQBXp_kCXcBBw/videos",
+                app = "vnd.youtube://UCJrEYgyJVevQBXp_kCXcBBw";
 
                 if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
                     window.location = app;
